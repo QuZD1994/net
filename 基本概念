@@ -1,0 +1,20 @@
+一、网络:将不同区域的计算机连接到一起   局域网 城域网  互联网
+二、地址:IP地址 确定网络上 一个绝对地址 |位置  --->房子的地址
+三、端口号: 区分计算机软件的   -->房子的房门 2个字节    0-65535  共65536个
+1、在同一个协议下 端口号不能重复  不同协议下可以重复
+2、1024以下的不要使用  80-->http 21 -->ftp
+四、资源定位: URL 统一资源定位符   URI :统一资源
+五、数据的传输
+1、协议: Tcp 和UDP协议
+  1)、TCP(transfer control protocol): 电话 类似于三次握手   面向连接  安全可靠 效率低下
+  2)、UDP(UserDatagramProtocol ): 短信 非面向连接  效率高
+2、传输:
+  1)、先封装
+  2)、后拆封
+
+
+==>类
+1、InetAddress  InetSocketAddress
+2、URL
+3、TCP: ServerSocket  Socket
+4、UDP: DatagramSocket DatagramPacket
