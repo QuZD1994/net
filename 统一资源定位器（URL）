@@ -1,0 +1,19 @@
+URI(Uniform resource identifier)统一资源标识符,用来唯一的标识一个资源。
+URL（Uniform Resource Locator）统一资源定位器,它是一种具体的URI 
+
+四部分组成: 协议  存放资源的主机域名  端口 资源文件名(/)
+
+URL：
+一、创建
+URL(String spec)  :绝对路径构建
+URL(URL context, String spec)  :相对路径构建
+二、方法
+System.out.println("协议:"+url.getProtocol());
+System.out.println("域名:"+url.getHost());
+System.out.println("端口:"+url.getPort());
+System.out.println("资源:"+url.getFile());
+System.out.println("相对路径:"+url.getPath());
+System.out.println("锚点:"+url.getRef()); //锚点
+System.out.println("参数:"+url.getQuery());//?参数 :存在锚点  返回null ,不存在，返回正确
+三、流
+openStream() 
