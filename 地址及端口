@@ -1,0 +1,14 @@
+1、InetAddress :封装 IP 及DNS
+ 方法:
+getHostAddress() 返回ip地址
+getHostName() 返回域名|本机为计算机名
+InetAddress.getLocalHost();
+InetAddress.getByName("ip地址|域名");
+2、InetSocketAddress:封装端口
+1)、创建对象: 
+ InetSocketAddress(String hostname, int port) 
+InetSocketAddress(InetAddress addr, int port) 
+2)、方法：
+getAddress() 
+getHostName() 
+getPort() 
